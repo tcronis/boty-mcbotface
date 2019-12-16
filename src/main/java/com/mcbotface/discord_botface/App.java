@@ -22,6 +22,7 @@ public class App extends ListenerAdapter
     	
         JDABuilder builder = new JDABuilder(AccountType.BOT);
         Authenticator authen = new Authenticator();				//call the custom authenticator class to get token
+        builder.setStatus(OnlineStatus.OFFLINE);
         builder.setToken(authen.getToken());
         builder.addEventListeners(new App());
         builder.build();
@@ -32,22 +33,37 @@ public class App extends ListenerAdapter
     	if(event.getMessage().getAuthor().isBot())
     		return;
     	if(event.getMessage().getContentDisplay().toString().charAt(0) == '!') {
-    		String command = event.getMessage().getContentDisplay().toString();
-    		//!emoji call
-    		
-    		//!self destruct call
-    		
-    		
+    		Boolean space = event.getMessage().getContentDisplay().contains(" ");
+    		String command;
+    		if(space)
+    			command = event.getMessage().getContentDisplay().toString().substring(1, event.getMessage().getContentDisplay().indexOf(" "));
+    		else
+    			command = event.getMessage().getContentDisplay().toString().substring(1);
+    		//!create_emoji - will create an emoji based on the photo given
+    		if(command.equalsIgnoreCase("create_emoji")) {
+    			
+    		}
+    		//!self_destruct_mcbotface - will exit the server
+    		else if(command.equalsIgnoreCase("self_destruct_mcbotface")) {
+    			
+    		}
+    		//!execute_order_66 - kill all the bots on the server
+    		else if(command.equalsIgnoreCase("execute_order_66")) {
+    			
+    		}
+    		//!murder_INSERTBOTNAMEHERE - remove the bot by this name off the sever
+    		else if(command.contains("murder_")) {
+    			
+    		}
+    		else if(command.contains("i_am_a_smooth_brain")) {
+    			event.getChannel().sendMessage("```I am a smooth brain```").queue();
+    		}
+    		else {
+    			event.getChannel().sendMessage("I don't know what the fuck you meant to say, but "+ 
+    					"you can put '!i_am_a_smooth_brain' to display all of my commands").queue();
+    		}
     	}
     	
-    	//F reaction after someone put F in the chat
-    	
-    	
-    	System.out.println("recieved the message");
-    	System.out.println(event.getAuthor());
-    	System.out.println(event.getMessage().getContentDisplay());
-    	
-    	
-    	
+    	//F reaction after someone put F in the chat    	
     }
 }
