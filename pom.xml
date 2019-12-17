@@ -45,7 +45,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.bitch_bot.bot_of_bitch.App</mainClass>
+                            <mainClass>com.mcbotface.discord_botface.App</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
