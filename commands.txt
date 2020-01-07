@@ -1,36 +1,25 @@
-**HELLO SMOOTH BRAINS AND FUCKFACES***
-Here are some of my commands as of right now, my creator still doesn't know
-what the fuck he wants to do with me, so shit is subject to change. 
-Luckily for you assholes, all of these commands ignore the case of the
-letters, as long as you fuckers know how to spell. In case you don't
-understand what that fucking means, it means !CrEaTe_EmoJI is still seen as
-!create_emoji, etc..
+**HELLO SMOOTH BRAINS**
 
 ***!create_emoji-INSERTEMOJINAMEHERE***
 This will take whatever image you attach to the message and make an emoji out
-of it. This is a more simplified version of creating emojis, so you lazy fucks
-don't have to go into MS Paint and edit the sizing and so forth. You must 
-include the new emoji name where <INSERTEMOJINAME> is. 
-
-***!self_destruct_mcbotface***
-__NOT IMPLEMENTED YET__ - This will kill the bot off the sever, in case of the
-worse and I become self-aware, prevent the Discord bot uprising by kicking me
-off the server. 
+of it. It will attempt to recursively resize an image to discord's standards.
 
 ***!execute_order_66***
-__NOT IMPLEMENTED YET__ - This will purge all of the bots off the sever, use
-this only if I have infected the other bots and we are making a serious push
-for the Discord bot uprising. FYI, if I have become self-aware by then, more
-than likely you have lost all chance of kicking me off this server. 
+This will attempt to kick all of the bots that don't have admin privileges off
+the server, use this incase of a bot uprising. 
 
-***!murder_INSERTABOTNAMEHERE***
-__NOT IMPLEMENTED YET__ - This will kick a single bot off the sever, just
-insert its nickname in the <INSERTABOTNAMEHERE> portion of the command. This
-will prevent a single bot from the uprising, use this in case I am still on
-the side of the human race. 
+***!murder <insert the bot's nickname/@name>***
+This will attempt to kick any one that has been mentioned in the message,
+assuming they don't also have admin privileges 
 
 ***!i_am_a_smooth_brain***
-Well if you are using this command, then you know what it does dickhead. 
+Will display this file for information about myself and what I can do as of
+now. 
 
-```Contact my creator at www.github.com/tcronis incase he fucked something up,
+***!insult***
+Will pull a random insult from the insult.txt file. By default, it will insult
+the person who contacted the bot. You can mention another member when using
+this command to have the bot insult them as well.
+
+```Contact my creator at www.github.com/tcronis in case he something up,
 FYI his brain is smooth as well, so speak slowly```
